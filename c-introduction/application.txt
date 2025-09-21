@@ -1,0 +1,5 @@
+linux operating system
+git version control system 
+aparche http server
+vim text editor
+sqlite database management system
