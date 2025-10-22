@@ -2,9 +2,16 @@
 
 int main() {
     int num;
+    int result;
 
     printf("Enter an integer: ");
-    scanf("%d", &num);
+    result = scanf("%d", &num);
+
+    // Check if input was a valid integer
+    if (result != 1) {
+        printf("Invalid input! Please enter an integer.\n");
+        return 1; // non-zero exit code (shows error)
+    }
 
     if (num > 0)
         printf("%d is a positive number.\n", num);
