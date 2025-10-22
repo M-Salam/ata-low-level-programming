@@ -2,22 +2,17 @@
 
 int main() {
     int a, b, c;
-    int got;
 
     printf("Enter three integers: ");
-    got = scanf("%d %d %d", &a, &b, &c);
+    if (scanf("%d %d %d", &a, &b, &c) != 3)
+        return 1;  // fail silently if input invalid
 
-    /* validate input */
-    if (got != 3) {
-        printf("Invalid input! Please enter three integers.\n");
-        return 1; /* non-zero exit code signals error */
-    }
+    if (a >= b && a >= c)
+        printf("%d is the largest number.\n", a);
+    else if (b >= a && b >= c)
+        printf("%d is the largest number.\n", b);
+    else
+        printf("%d is the largest number.\n", c);
 
-    /* find largest */
-    int largest = a;         /* start assuming a is largest */
-    if (b > largest) largest = b;
-    if (c > largest) largest = c;
-
-    printf("%d is the largest number.\n", largest);
     return 0;
 }
