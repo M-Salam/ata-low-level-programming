@@ -1,0 +1,9 @@
+
+
+C allows for precise control over
+ hardware and memory management.
+It is the foundation for operating
+ systems like Linux and Windows.
+C code is highly efficient
+ and portable across different
+ computer architectures.

@@ -1,0 +1,15 @@
+1. Preprocessing:
+   This is the first stage. The preprocessor handles #include and #define. 
+   It removes comments and prepares the code before real compilation.
+
+2. Compiling:
+   The compiler takes the preprocessed code and translates it into assembly code.
+   This checks for syntax errors and turns C code into something closer to machine instructions.
+
+3. Assembling:
+   The assembler changes the assembly code into object code (machine code).
+   The result is a .o file that the computer understands but cannot run yet.
+
+4. Linking:
+   The linker connects all the object files together and adds needed libraries.
+   It produces the final executable program that can run.
